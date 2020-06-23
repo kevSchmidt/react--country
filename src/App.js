@@ -3,13 +3,11 @@ import Loading from "./components/Loading";
 import Country from "./components/Country";
 import axios from "axios";
 
-const URL_API = `https://restcountries.eu/rest/v2/name/germany`;
-
 export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: {},
+      data: [],
       userInput: "",
       loading: true,
     };
@@ -17,6 +15,13 @@ export default class App extends React.Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
+    axios(`https://restcountries.eu/rest/v2/name/${this.state.userInput}`).then(
+      (res) => {
+        console.log(res);
+        const { data } = res;
+        this.setState({ data });
+      }
+    );
   };
 
   handleChange = (e) => {
@@ -31,11 +36,6 @@ export default class App extends React.Component {
         loading: false,
       });
     }, 2000);
-
-    axios(URL_API).then((res) => {
-      const { ...props } = res.data;
-      this.setState({ data: { ...props } });
-    });
   }
 
   render() {
@@ -45,7 +45,8 @@ export default class App extends React.Component {
     return (
       <React.Fragment>
         <h1>Country App</h1>
-        <form onChange={this.handleSubmit}>
+
+        <form onSubmit={this.handleSubmit}>
           <input
             type="text"
             value={this.state.userInput}
@@ -54,6 +55,7 @@ export default class App extends React.Component {
           />
           <button type="submit">Search</button>
         </form>
+
         <Country data={data} />
       </React.Fragment>
     );
