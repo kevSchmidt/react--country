@@ -2,21 +2,42 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  // font-size: 62.4%;
 }
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
-}
 .loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-size: 8rem;
   color: black;
 }
 
-h1 {
-  font-size: 2rem;
+.app {
+  &-title,
+  &-form {
+    text-align: center;
+    margin: 1rem;
+  }
+}
+
+.country-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.country {
+  width: 20rem;
+  height: 15rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 1.5rem;
+
+  &__flag {
+    width: 5rem;
+  }
 }

@@ -17,7 +17,7 @@ export default class App extends React.Component {
     e.preventDefault();
     axios(`https://restcountries.eu/rest/v2/name/${this.state.userInput}`).then(
       (res) => {
-        console.log(res);
+        // console.log(res);
         const { data } = res;
         this.setState({ data });
       }
@@ -40,18 +40,18 @@ export default class App extends React.Component {
 
   render() {
     const { data } = this.state;
-
     if (this.state.loading) return <Loading />;
+
     return (
       <React.Fragment>
-        <h1>Country App</h1>
+        <h1 className="app-title">Beautiful Countries</h1>
 
-        <form onSubmit={this.handleSubmit}>
+        <form onSubmit={this.handleSubmit} className="app-form">
           <input
             type="text"
             value={this.state.userInput}
             onChange={this.handleChange}
-            placeholder="Enter a county"
+            placeholder="Look for a country"
           />
           <button type="submit">Search</button>
         </form>
