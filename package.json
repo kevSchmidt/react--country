@@ -9,7 +9,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "author": "Hadi Nsreeny",
+  "author": "Kevin",
   "license": "ISC",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
