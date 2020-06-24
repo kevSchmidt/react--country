@@ -1,3 +1,3 @@
 # react-country
 
-![](./img/preview.png)
+![](./img/preview-readme.png)
