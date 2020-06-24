@@ -4,13 +4,22 @@
   box-sizing: border-box;
 }
 
+:root {
+  background: url(../images/dest.png) no-repeat;
+  font-family: Helvetica, sans-serif;
+  color: white;
+  line-height: 150%;
+  letter-spacing: 1.2px;
+  background-color: #111;
+}
+
 .loading {
   position: fixed;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 8rem;
-  color: black;
+  font-size: 5rem;
+  color: #fff;
 }
 
 .app {
@@ -21,7 +30,21 @@
   }
 }
 
+.input-form {
+  height: 2rem;
+  width: 30rem;
+  outline: none;
+}
+
+.btn-form {
+  height: 2rem;
+  padding: 0 1.5rem;
+  outline: none;
+  cursor: pointer;
+}
+
 .country-container {
+  margin-top: 21rem;
   width: 100%;
   display: flex;
   align-items: center;
@@ -30,14 +53,41 @@
 }
 
 .country {
-  width: 20rem;
-  height: 15rem;
-  border: 1px solid black;
-  border-radius: 5px;
+  width: 27rem;
+  height: 17rem;
+  border: 3px solid #343436;
+  background: radial-gradient(#021758, #070c22);
+  border-radius: 3px;
   padding: 1rem;
-  margin: 1.5rem;
+  margin: 0.5rem;
 
   &__flag {
+    height: 3.3rem;
     width: 5rem;
+    border-radius: 50%;
+  }
+
+  &__code {
+    background: #fff;
+    color: #021758;
+    font-weight: 700;
+    margin-left: 17rem;
+    vertical-align: 1.5rem;
+    border: 1px solid black;
+    border-radius: 15% 10%;
+    padding: 0.3rem;
+  }
+
+  &__name {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+  }
+
+  &__capital,
+  &__language,
+  &__currencies,
+  &__region,
+  &__population {
+    font-size: 1rem;
   }
 }

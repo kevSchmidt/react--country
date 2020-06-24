@@ -44,16 +44,19 @@ export default class App extends React.Component {
 
     return (
       <React.Fragment>
-        <h1 className="app-title">Beautiful Countries</h1>
+        <h1 className="app-title">DESTINATION</h1>
 
         <form onSubmit={this.handleSubmit} className="app-form">
           <input
             type="text"
             value={this.state.userInput}
             onChange={this.handleChange}
-            placeholder="Look for a country"
+            placeholder="Search for a country..."
+            className="input-form"
           />
-          <button type="submit">Search</button>
+          <button type="submit" className="btn-form">
+            Search
+          </button>
         </form>
 
         <Country data={data} />
