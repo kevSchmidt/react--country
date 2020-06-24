@@ -1,4 +1,5 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Country = ({ data }) => {
   console.log(data);
@@ -10,7 +11,10 @@ const Country = ({ data }) => {
           <img src={item.flag} alt="flag" className="country__flag" />
           <span className="country__code">{item.alpha2Code}</span>
 
-          <h1 className="country__name">{item.name}</h1>
+          <div className="row-flex">
+            <FontAwesomeIcon icon="plane-departure" className="country__icon" />
+            <h1 className="country__name">{item.name}</h1>
+          </div>
 
           <h3 className="country__capital">Capital: {item.capital}</h3>
           <h3 className="country__language">

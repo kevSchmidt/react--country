@@ -27,6 +27,7 @@
   &-form {
     text-align: center;
     margin: 1rem;
+    font-weight: 300;
   }
 }
 
@@ -52,9 +53,14 @@
   flex-wrap: wrap;
 }
 
+.row-flex {
+  display: flex;
+  align-items: center;
+}
+
 .country {
   width: 27rem;
-  height: 17rem;
+  height: 19rem;
   border: 3px solid #343436;
   background: radial-gradient(#021758, #070c22);
   border-radius: 3px;
@@ -73,14 +79,18 @@
     font-weight: 700;
     margin-left: 17rem;
     vertical-align: 1.5rem;
-    border: 1px solid black;
-    border-radius: 15% 10%;
+    border-radius: 2px;
     padding: 0.3rem;
   }
 
+  &__icon {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+  }
+
   &__name {
-    font-size: 1.8rem;
-    margin: 1rem 0;
+    font-size: 1.6rem;
+    margin: 0.6rem 0;
   }
 
   &__capital,
