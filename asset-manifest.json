@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/react-country/static/css/main.d5d20544.chunk.css",
-    "main.js": "/react-country/static/js/main.b7e76089.chunk.js",
-    "main.js.map": "/react-country/static/js/main.b7e76089.chunk.js.map",
-    "runtime-main.js": "/react-country/static/js/runtime-main.4d8de648.js",
-    "runtime-main.js.map": "/react-country/static/js/runtime-main.4d8de648.js.map",
-    "static/js/2.58bbdccb.chunk.js": "/react-country/static/js/2.58bbdccb.chunk.js",
-    "static/js/2.58bbdccb.chunk.js.map": "/react-country/static/js/2.58bbdccb.chunk.js.map",
-    "index.html": "/react-country/index.html",
-    "precache-manifest.c756ab8b4ea11f819d1aa1ab717c20e7.js": "/react-country/precache-manifest.c756ab8b4ea11f819d1aa1ab717c20e7.js",
-    "service-worker.js": "/react-country/service-worker.js",
-    "static/css/main.d5d20544.chunk.css.map": "/react-country/static/css/main.d5d20544.chunk.css.map",
-    "static/js/2.58bbdccb.chunk.js.LICENSE.txt": "/react-country/static/js/2.58bbdccb.chunk.js.LICENSE.txt",
-    "static/media/main.scss": "/react-country/static/media/dest.9e4d49ce.png"
+    "main.css": "/react--country/static/css/main.dc8bcdb3.chunk.css",
+    "main.js": "/react--country/static/js/main.ae7330a8.chunk.js",
+    "main.js.map": "/react--country/static/js/main.ae7330a8.chunk.js.map",
+    "runtime-main.js": "/react--country/static/js/runtime-main.af552197.js",
+    "runtime-main.js.map": "/react--country/static/js/runtime-main.af552197.js.map",
+    "static/js/2.58bbdccb.chunk.js": "/react--country/static/js/2.58bbdccb.chunk.js",
+    "static/js/2.58bbdccb.chunk.js.map": "/react--country/static/js/2.58bbdccb.chunk.js.map",
+    "index.html": "/react--country/index.html",
+    "precache-manifest.73895cb9ce18ca196485c2df0c283c66.js": "/react--country/precache-manifest.73895cb9ce18ca196485c2df0c283c66.js",
+    "service-worker.js": "/react--country/service-worker.js",
+    "static/css/main.dc8bcdb3.chunk.css.map": "/react--country/static/css/main.dc8bcdb3.chunk.css.map",
+    "static/js/2.58bbdccb.chunk.js.LICENSE.txt": "/react--country/static/js/2.58bbdccb.chunk.js.LICENSE.txt",
+    "static/media/main.scss": "/react--country/static/media/dest.9e4d49ce.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.4d8de648.js",
+    "static/js/runtime-main.af552197.js",
     "static/js/2.58bbdccb.chunk.js",
-    "static/css/main.d5d20544.chunk.css",
-    "static/js/main.b7e76089.chunk.js"
+    "static/css/main.dc8bcdb3.chunk.css",
+    "static/js/main.ae7330a8.chunk.js"
   ]
 }
