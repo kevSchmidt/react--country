@@ -1,7 +1,7 @@
 # React Country
 
-- Link of the project: https://kevschmidt.github.io/react-country/
-- Clone the repository: ``` git clone git@github.com:kevSchmidt/react-country.git ```
+- Link of the project: https://kevschmidt.github.io/react--country/
+- Clone the repository: ``` git clone git@github.com:kevSchmidt/react--country.git ```
 
 This project gives informations about countries using an Application Programming Interface and Axios.
  - API: https://restcountries.eu/
