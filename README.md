@@ -1,4 +1,4 @@
-# react-country
+# React Country
 
 - Link of the project: https://kevschmidt.github.io/react-country/
 - Clone the repository: ``` git clone git@github.com:kevSchmidt/react-country.git ```
